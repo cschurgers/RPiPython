@@ -1,2 +1,3 @@
-# Python
-This repo contains RPi Python files
+# RPiPython
+Raspberry Pi Python code
+
