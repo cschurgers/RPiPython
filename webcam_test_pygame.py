@@ -8,6 +8,7 @@ import pygame.camera
 width = 640
 height = 480
 
+
 #initialise pygame   
 pygame.init()
 pygame.camera.init()
@@ -29,4 +30,10 @@ pygame.display.update()
 
 #save picture
 pygame.image.save(windowSurfaceObj,'picture.jpg')
-   
+
+#check until it is time to exit   
+while True:
+    for event in pygame.event.get():
+            if event.type == QUIT:
+                pygame.quit()
+                sys.exit()
